@@ -1,5 +1,6 @@
 // import Header from "app/components/header.tsx"
 import Header from "./components/header"
+import CardGenerator from "./components/cardGenerator"
 
 export default function Page() {
   return (<>
@@ -11,6 +12,10 @@ export default function Page() {
         And a subheading describing you site, too
       </div>
       <button className="text-xs mx-10 bg-black text-white px-4 py-3 rounded-md">Button</button>
+    </div>
+    {/* Content description */}
+    <div>
+      <CardGenerator/>
     </div>
   </>)
 }
