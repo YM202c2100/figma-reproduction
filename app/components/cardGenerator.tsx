@@ -14,10 +14,12 @@ function CardGenerator(){
         {Cards.map(card => {
             return(
                 <div key={card.src}>
-                    <Image src={card.src} width={"300"} height={"300"} alt={`Image of ${card.title}`}/>
-                    <div>{card.title}</div>
-                    <div>{card.description}</div>
-                    <button>Button</button>
+                    <div>
+                        <div>{card.title}</div>
+                        <div>{card.description}</div>
+                        <button>Button</button>
+                    </div>
+                    <Image src={card.src} alt="picture of fruits" width={"400"} height={"257"}/>
                 </div>
             )
         })}
