@@ -19,7 +19,7 @@ function CardGenerator(){
                         <div>{card.description}</div>
                         <button>Button</button>
                     </div>
-                    <Image src={card.src} alt="picture of fruits" width={"400"} height={"257"}/>
+                    <Image src={card.src} alt="picture of fruits" width={"550"} height={"354"}/>
                 </div>
             )
         })}
