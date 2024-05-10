@@ -11,18 +11,24 @@ const Cards:Card[] = [{src:"/Figma-pear.jpg",
 
 function CardGenerator(){
     return(<>
-        {Cards.map(card => {
+        {/* {Cards.map(card => {
             return(
-                <div key={card.src} className="flex justify-between items-center mb-28">
-                    <div className="mr-36">
+                <div key={card.src} className="flex justify-center items-center mb-28 bg-slate-400">
+                    <div className=" bg-green-300">
                         <div className="text-4xl">{card.title}</div>
                         <div className="text-stone-400 text-xl my-4">{card.description}</div>
                         <button className="text-xs bg-black text-white px-5 py-4 rounded-md">Button</button>
                     </div>
-                    <Image src={card.src} alt="picture of fruits" width={"550"} height={"354"} className="rounded-xl"/>
+                    <div className="relative bg-red-400">
+                        <Image src={card.src} alt="picture of fruits" fill={true} style={{objectFit:"contain"}} className="rounded-xl"/>
+                    </div>
                 </div>
             )
-        })}
+        })} */}
+        <div className="bg-slate-400 flex p-4">
+            <div className="bg-green-300 flex-grow">a</div>
+            <div className="bg-red-400 flex-grow h-96">b</div>
+        </div>
     </>)
 }
 
