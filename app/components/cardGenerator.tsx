@@ -1,25 +1,29 @@
 "use client"
-import Image from "next/image";
-type Card ={src:string, title:string, description:string};
+import Image, { StaticImageData } from "next/image";
 
-const Cards:Card[] = [{src:"/Figma-pear.jpg",
+import pear from "../../public/Figma-pear.jpg";
+import watermelon from "../../public/Figma-watermelon.jpg";
+
+type Card ={src:StaticImageData, title:string, description:string};
+
+const Cards:Card[] = [{src:pear,
                        title:"Heading",
                        description:"A subheading for this section, as long or as short as you likde"},
-                      {src:"/Figma-watermelon.jpg",
+                      {src:watermelon,
                        title:"Heading",
                        description:"A subheading for this section, as long or as short as you like"}];
 
 function CardGenerator(){
     return(<>
-        {Cards.map(card => {
+        {Cards.map((card, i) => {
             return(
-                <div key={card.src} className="flex justify-between items-center mb-28">
-                    <div className="mr-36">
+                <div key={card.src.src} className="mx-5 mb-10 md:mb-20  md:flex">
+                    <Image src={card.src} alt="Picture of OO" className="md:w-1/2 "/>
+                    <div className="flex-grow py-10 flex flex-col justify-center md:pl-16">
                         <div className="text-4xl">{card.title}</div>
                         <div className="text-stone-400 text-xl my-4">{card.description}</div>
-                        <button className="text-xs bg-black text-white px-5 py-4 rounded-md">Button</button>
+                        <button className="w-20 text-xs bg-black text-white px-5 py-4 rounded-md">Button</button>
                     </div>
-                    <Image src={card.src} alt="picture of fruits" width={"550"} height={"354"} className="rounded-xl"/>
                 </div>
             )
         })}
