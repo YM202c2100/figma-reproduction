@@ -1,6 +1,7 @@
 // import Header from "app/components/header.tsx"
 import Header from "./components/header"
 import CardGenerator from "./components/cardGenerator"
+import AboutFeatures from "./components/aboutFeatures"
 
 export default function Page() {
   return (
@@ -18,6 +19,7 @@ export default function Page() {
       <div className="container mx-auto my-28">
         <CardGenerator/>
       </div>
+      <AboutFeatures/>
     </div>
     
   )
