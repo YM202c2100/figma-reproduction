@@ -1,14 +1,15 @@
 "use client"
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
 import pear from "../../public/Figma-pear.jpg";
+import watermelon from "../../public/Figma-watermelon.jpg";
 
-type Card ={src:string, title:string, description:string};
+type Card ={src:StaticImageData, title:string, description:string};
 
-const Cards:Card[] = [{src:"/Figma-pear.jpg",
+const Cards:Card[] = [{src:pear,
                        title:"Heading",
                        description:"A subheading for this section, as long or as short as you likde"},
-                      {src:"/Figma-watermelon.jpg",
+                      {src:watermelon,
                        title:"Heading",
                        description:"A subheading for this section, as long or as short as you like"}];
 
