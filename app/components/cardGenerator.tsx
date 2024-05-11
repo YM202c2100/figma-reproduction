@@ -19,7 +19,7 @@ function CardGenerator(){
             return(
                 <div key={card.src.src} className="mx-5 mb-10 md:mb-20  md:flex">
                     <Image src={card.src} alt="Picture of OO" className="md:w-1/2 "/>
-                    <div className="flex-grow py-10 flex flex-col justify-center">
+                    <div className="flex-grow py-10 flex flex-col justify-center md:pl-16">
                         <div className="text-4xl">{card.title}</div>
                         <div className="text-stone-400 text-xl my-4">{card.description}</div>
                         <button className="w-20 text-xs bg-black text-white px-5 py-4 rounded-md">Button</button>
