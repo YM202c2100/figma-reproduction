@@ -27,17 +27,6 @@ function CardGenerator(){
                 </div>
             )
         })}
-
-
-        <div className="flex flex-col md:flex-row">
-            <Image src={pear} alt="Picture of pear" sizes="100vw" className="w-full h-auto md:w-1/2"/>
-            <div className=" bg-green-300 md:w-1/2">
-                <div className="text-4xl">Heading</div>
-                <div className="text-stone-400 text-xl my-4">A subheading for this section, as long or as short as you likde
-                </div>
-                <button className="text-xs bg-black text-white px-5 py-4 rounded-md">Button</button>
-            </div>
-        </div>
     </>)
 }
 
