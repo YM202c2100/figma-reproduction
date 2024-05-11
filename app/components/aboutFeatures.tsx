@@ -1,4 +1,3 @@
-import Image from "next/image"
 import Feature from "./feature"
 
 export default function AboutFeatures(){
