@@ -3,19 +3,22 @@ import Header from "./components/header"
 import CardGenerator from "./components/cardGenerator"
 
 export default function Page() {
-  return (<>
-    <Header/>
-    {/* メインタイトル */}
-    <div className="flex flex-col items-center">
-      <div className="text-5xl mt-20">Landing page title</div>
-      <div className="m-4 text-stone-400">
-        And a subheading describing you site, too
+  return (
+    <div className="container mx-auto">
+      <Header/>
+      {/* メインタイトル */}
+      <div className="flex flex-col items-center">
+        <div className="text-5xl mt-20">Landing page title</div>
+        <div className="m-4 text-stone-400">
+          And a subheading describing you site, too
+        </div>
+        <button className="text-xs mx-10 bg-black text-white px-4 py-3 rounded-md">Button</button>
       </div>
-      <button className="text-xs mx-10 bg-black text-white px-4 py-3 rounded-md">Button</button>
+      {/* Content description */}
+      <div className="container mx-auto my-28">
+        <CardGenerator/>
+      </div>
     </div>
-    {/* Content description */}
-    <div className="container mx-auto my-28">
-      <CardGenerator/>
-    </div>
-  </>)
+    
+  )
 }
