@@ -16,7 +16,7 @@ export default function Page() {
         <button className="text-xs bg-black text-white px-4 py-3 rounded-md lg:text-xl xl:text-3xl xl:px-8 xl:py-6">Button</button>
       </div>
       {/* Content description */}
-      <div className="container mx-auto my-28">
+      <div className="container mx-auto mt-28">
         <CardGenerator/>
       </div>
       <AboutFeatures/>
