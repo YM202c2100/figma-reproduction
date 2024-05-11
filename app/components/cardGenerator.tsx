@@ -15,20 +15,20 @@ const Cards:Card[] = [{src:pear,
 
 function CardGenerator(){
     return(<>
-        {/* {Cards.map(card => {
+        {Cards.map((card, i) => {
             return(
-                <div key={card.src} className="flex justify-center items-center mb-28 bg-slate-400">
-                    <div className=" bg-green-300">
+                <div key={card.src.src} className="mb-20 md:flex">
+                    <Image src={card.src} alt="Picture of OO" className="md:w-1/2 "/>
+                    <div className="flex-grow bg-green-300 flex flex-col justify-center">
                         <div className="text-4xl">{card.title}</div>
                         <div className="text-stone-400 text-xl my-4">{card.description}</div>
-                        <button className="text-xs bg-black text-white px-5 py-4 rounded-md">Button</button>
-                    </div>
-                    <div className="relative bg-red-400">
-                        <Image src={card.src} alt="picture of fruits" fill={true} style={{objectFit:"contain"}} className="rounded-xl"/>
+                        <button className="w-20 text-xs bg-black text-white px-5 py-4 rounded-md">Button</button>
                     </div>
                 </div>
             )
-        })} */}
+        })}
+
+
         <div className="flex flex-col md:flex-row">
             <Image src={pear} alt="Picture of pear" sizes="100vw" className="w-full h-auto md:w-1/2"/>
             <div className=" bg-green-300 md:w-1/2">
