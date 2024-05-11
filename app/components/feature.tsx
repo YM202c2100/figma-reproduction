@@ -1,9 +1,12 @@
-import Image from "next/image"
+import Image, {StaticImageData} from "next/image"
 
-export default function Feature(){
+type srcProps = {
+  src:StaticImageData
+}
+const Feature:React.FC<srcProps> = ({src})=>{
   return(
     <div className="w-3/4 py-7 lg:w-2/5">
-      {/* <Image/> */}
+      <Image src={src} alt=""/>
       <h2 className="text-2xl">Subheading</h2>
       <p className="text-stone-400 text-xl">
         Body text for whatever you'd like to say. Add main
@@ -13,3 +16,5 @@ export default function Feature(){
     </div>
   )
 }
+
+export default Feature;
