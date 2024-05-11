@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${lato.className} bg-stone-100`}>{children}</body>
+      <body className={`${lato.className} `}>{children}</body>
     </html>
   );
 }
