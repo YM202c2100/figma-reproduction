@@ -8,7 +8,7 @@ export default function Page() {
       <Header/>
       {/* メインタイトル */}
       <div className="flex flex-col items-center">
-        <div className="text-6xl mt-20 lg:text-7xl xl:text-8xl 2xl:text-9xl">Landing page title</div>
+        <div className="text-4xl sm:text-6xl mt-20 lg:text-7xl xl:text-8xl 2xl:text-9xl">Landing page title</div>
         <div className="text-lg m-4 text-stone-400 lg:text-2xl xl:text-3xl xl:my-8 2xl:text-5xl">
           And a subheading describing you site, too
         </div>
